@@ -45,15 +45,22 @@ nav ul li a:hover {
 }
 nav h1 {
   color: orange;
-  padding-left: 120px;
   text-transform: uppercase;
 }
 nav i{
   padding-right: 8px;
   font-size: 28px;
 }
+.no{
+  padding-left:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
+}
+#bare{
+  display: none;
+}
 .up{
   width: 50px;
   height: 50px;
@@ -81,8 +88,7 @@ nav i{
   height: 800px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.919) , rgba(0, 0, 0, 0.777)),url(img/bg-hero.jpg);
+  background-image: linear-gradient(rgba(49, 51, 65, 0.919) , rgba(34, 32, 57, 0.777)),url(img/bg-hero.jpg);
 }
 .text {
   padding-left: 80px;
@@ -707,6 +713,8 @@ nav i{
   text-transform: capitalize;
   border: none;
 }
+
+
 @media (max-width: 1000px) {
   
   *{
@@ -1627,11 +1635,13 @@ nav{
 }
 
 .container{
-  width: 600px;
+  width: 650px;
   border: 5px solid orange;
 }
 .content{
-    width: 100%;
+  width: 100%;
+ 
+  background-image: linear-gradient(rgba(49, 51, 65, 0.919) , rgba(34, 32, 57, 0.777)),url(img/bg-hero.jpg);
     height: 400px;
     padding-top: 350px;
     color: white;
@@ -1712,8 +1722,9 @@ nav{
     padding-top: 40px;
   }
   .gr{
+   
       display: grid;
-      width: 66%;
+      width: 95%;
       height: 450px;
       background-color:rgba(245, 238, 238, 0.86) ;
       grid-template-columns: repeat(2,1fr);
@@ -1721,13 +1732,13 @@ nav{
       margin-left: 0px;
       padding-top: 30px;
       margin-top: 40px;
-      margin-bottom: 80px;
+      margin-bottom: 120px;
       gap: 10px;
      
   }
   .g{
-      width: 200px;
-      height: 200px;
+      width: 250px;
+      height: 250px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -1756,11 +1767,11 @@ nav{
   /* ------------------------------------------------------------------------------ */
     .con2{
       
-      width: 652px;
+      width: 580px;
       height: 1300px;
       display: flex;
       flex-direction: column;
-      background-color:rgba(245, 238, 238, 0.86) ;
+     
       margin-bottom: 1500px;
     
       margin-top: 20px;
@@ -1771,7 +1782,7 @@ nav{
   .gx{
       padding-top: 60px;
       display: flex;
-      width: 470px;
+      width: 600px;
       height:1200px;
       flex-direction: column;
       align-items: center;
@@ -1782,7 +1793,7 @@ nav{
   .gy{
       display: flex;
       flex-direction: column;
-      width: 90%;
+      width: 100%;
       height: 400px; 
      justify-content: center;
      padding-top: 80px;
@@ -2013,7 +2024,7 @@ nav{
 
 .con4{
    
-  width:90%;
+  width:100%;
   height: 880px;
   margin: auto;
   display: flex;
@@ -2144,6 +2155,7 @@ height: 80px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  margin: auto;
   
 
 }
@@ -2206,7 +2218,7 @@ height: 80px;
 .con6{
   margin-top: 550px;
   padding-top: 20px;
-  width: 96%;
+  width: 100%;
   height: 1200px;
   background-color: rgb(40, 42, 65);
   color: white;
