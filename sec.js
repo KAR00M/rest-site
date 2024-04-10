@@ -34,3 +34,16 @@ let up=document.getElementById('up');
 up.onclick=function(){
   this.scrollTo.up
 }
+
+let bare=document.getElementById('bare');
+let bar=document.getElementById('bar');
+
+
+bare.onclick=function(){
+
+bar.style.display='flex';
+}
+bare.ondblclick=function(){
+
+bar.style.display='none';
+}
