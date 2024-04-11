@@ -132,6 +132,7 @@ nav i{
   }
 }
 
+
 .con2{
     width: 100%;
     height: 1200px;
@@ -1542,6 +1543,12 @@ nav{
 
 @media (max-width: 600px) {
 
+
+  .container{
+    width: 850px;
+    border: 5px solid orange;
+  }
+
   nav{
     width: 100%;
     height: 43px;
@@ -1633,16 +1640,12 @@ nav{
     font-size: 10px;
 }
 
-.container{
-  width: 1050px;
-  border: 5px solid orange;
-}
+
 .content{
-  width: 100%;
- 
+  width: 105%;
   background-image: linear-gradient(rgba(49, 51, 65, 0.919) , rgba(34, 32, 57, 0.777)),url(img/bg-hero.jpg);
     height: 400px;
-    padding-top: 350px;
+    padding-top: 450px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -1657,7 +1660,7 @@ nav{
 }
 .content h1{
     text-transform: capitalize;
-    font-size: 40px;
+    font-size: 60px;
     font-family: monospace;
   
    
@@ -1669,14 +1672,14 @@ nav{
   align-items: center;
 }
 .content p{
-    font-size: 16px;
+    font-size: 20px;
     text-transform: capitalize;
     margin-top: 20px;
 }
 .content button{
-    width: 150px;
-    height: 40px;
-    margin-top: 60px;
+    width: 180px;
+    height: 50px;
+    margin-top: 90px;
     margin-left: 150px;
     background-color: orange;
     border: none;
@@ -1694,7 +1697,8 @@ nav{
 }
 .content img {
     margin-top: 60px;
-    width:90%;
+    width:60%;
+    margin-left:120px;
     animation-name: spin;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -1723,7 +1727,7 @@ nav{
   .gr{
    
       display: grid;
-      width: 95%;
+      width: 100%;
       height: 450px;
       background-color:rgba(245, 238, 238, 0.86) ;
       grid-template-columns: repeat(2,1fr);
@@ -1731,16 +1735,17 @@ nav{
       margin-left: 0px;
       padding-top: 30px;
       margin-top: 40px;
-      margin-bottom: 120px;
-      gap: 10px;
-     
+      margin-bottom: 250px;
+      gap: 20px;
+    
   }
   .g{
-      width: 250px;
-      height: 250px;
+    
+      width: 300px;
+      height: 300px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 20px;
       background-color:white ;
       align-items: center;
       transition: 0.8s;
@@ -1750,14 +1755,14 @@ nav{
   }
   
   .g h1{
-    font-size: 25px;
+    font-size: 35px;
   }
   .g:hover{
       background-color: orange;
       color: white;
   }
   .g p{
-    font-size: 15px;
+    font-size: 16px;
   }
   
   
@@ -1770,10 +1775,10 @@ nav{
       height: 1300px;
       display: flex;
       flex-direction: column;
-     
+      justify-content: center;
       margin-bottom: 1500px;
-    
-      margin-top: 20px;
+      margin-top: 250px;
+      margin-left: 30px;
 
      
   }
@@ -1781,7 +1786,7 @@ nav{
   .gx{
       padding-top: 60px;
       display: flex;
-      width: 600px;
+      width: 800px;
       height:1200px;
       flex-direction: column;
       align-items: center;
@@ -1865,14 +1870,14 @@ nav{
       grid-template-columns: repeat(2,1fr);
       grid-template-rows: repeat(2,1fr);
       gap: 10px;
-      width: 400px;
+      width: 520px;
       margin-right: 40px;
       border-radius: 15px;
       overflow: hidden;
   
   }
   .pic img{
-      width: 200px;
+      width: 250px;
   }
   .pi2{
       margin-top:20px;
@@ -2215,7 +2220,7 @@ height: 80px;
 
 
 .con6{
-  margin-top: 450px;
+  margin-top: 550px;
   padding-top: 20px;
   width: 100%;
   height: 1200px;
