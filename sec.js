@@ -28,12 +28,25 @@ dinner.onclick = function () {
 
 
 
-let up=document.getElementById('up');
 
 
-up.onclick=function(){
-  this.scrollTo.up
-}
+let scrole = document.getElementById("up");
+window.onscroll = function () {
+  if (scrollY > 300) {
+    scrole.style.display = "block";
+  } else {
+    scrole.style.display = "none";
+  }
+};
+scrole.onclick = function () {
+  scroll({
+    let: 0,
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+
 
 let bare=document.getElementById('bare');
 let bar=document.getElementById('bar');
