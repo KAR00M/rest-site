@@ -1,6 +1,10 @@
-* {
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kanit:wght@100&display=swap');
+
+*{
   padding: 0;
   margin: 0;
+
 }
 body {
   width: 100%;
@@ -46,6 +50,10 @@ nav ul li a:hover {
 nav h1 {
   color: orange;
   text-transform: uppercase;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
 }
 nav i{
   padding-right: 8px;
@@ -88,7 +96,7 @@ nav i{
   height: 800px;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(rgba(49, 51, 65, 0.919) , rgba(34, 32, 57, 0.777)),url(img/bg-hero.jpg);
+  background-image: linear-gradient(rgba(51, 53, 65, 0.919) , rgba(91, 89, 121, 0.777)),url(img/bg-hero.jpg);
 }
 .text {
   padding-left: 80px;
@@ -98,9 +106,15 @@ nav i{
   text-transform: uppercase;
   font-size: 45px;
   padding-bottom: 20px;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
 }
 .text p {
   font-size: 20px;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
 }
 .text button {
   margin-top: 50px;
@@ -170,6 +184,9 @@ nav i{
     align-items: center;
     transition: 0.8s;
     margin-bottom: 40px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 .g:hover{
     background-color: orange;
@@ -209,16 +226,21 @@ nav i{
   font-size: 40px;
 }
 .gy h4{
-    font-size: 18px;
+    font-size: 28px;
     text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
     color: orange;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
     
 }
 .gy h1{
     font-size: 40px;
     text-transform: capitalize;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     padding-bottom: 20px;
 }
 .g0{
@@ -293,7 +315,11 @@ nav i{
 }
 .menu h3{
   color: orange;
-  font-family:sans-serif ;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900px;
+  font-style: normal;
+  font-size: 28px;
 }
 .menu h1{
   padding-top: 10px;
@@ -446,11 +472,14 @@ nav i{
   padding-bottom: 10px;
 }
 .form legend{
-  font-size: 18px;
+  font-size: 28px;
   padding-top: 30px;
   color: orange;
   text-transform: capitalize;
-  font-family: monospace;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
 }
 .form h1{
   text-transform: capitalize;
@@ -489,9 +518,12 @@ nav i{
 }
 .nam h3{
   margin: auto;
-  font-size: 25px;
+  font-size: 35px;
   color: orange;
-  font-family: monospace;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
   text-transform: capitalize;
 }
 .nam h1{
@@ -553,6 +585,9 @@ nav i{
 .im2 h2{
   font-size: 30px;
   text-transform: capitalize;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 .im2 p{
   padding-top: 10px;
@@ -598,8 +633,11 @@ nav i{
 .com h1{
   color: orange;
   text-transform: capitalize;
-  font-family: monospace;
-  font-size: 30px;
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;;
   padding-bottom: 20px;
 }
 
@@ -622,8 +660,11 @@ nav i{
 .cont h1{
   color: orange;
   text-transform: capitalize;
-  font-family: monospace;
-  font-size: 30px;
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
   padding-bottom: 20px;
 }
 .conn{
@@ -660,8 +701,11 @@ nav i{
 .open h1{
   color: orange;
   text-transform: capitalize;
-  font-family: monospace;
-  font-size: 30px;
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
   padding-bottom: 20px;
 }
 .open p{
@@ -681,8 +725,11 @@ nav i{
 .news h1{
   color: orange;
   text-transform: capitalize;
-  font-family: monospace;
-  font-size: 30px;
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
   padding-bottom: 20px;
 }
 .news p{
@@ -715,7 +762,7 @@ nav i{
 }
 
 
-@media (max-width: 1000px) {
+@media ( max-width: 1000px) {
   
   *{
     padding: 0;
@@ -1541,16 +1588,16 @@ nav{
 }
 
 
-@media (max-width: 600px) {
-
+@media (max-width:500px) {
 
   .container{
-    width: 412px;
-    border: 5px solid orange;
+    width: 425px;
+    height: 9360px;
+    overflow: hidden;
   }
 
   nav{
-    width: 65%;
+    width: 100%;
     height: 43px;
     background-color: black;
     color: white;
@@ -1563,6 +1610,7 @@ nav{
     justify-content: space-between;
     align-items:center ;
     padding-top: 10px;
+   
 }
 .no{
     display: flex;
@@ -1575,7 +1623,8 @@ nav{
 .nov h1{
     text-transform: capitalize;
     font-size:28px;
-    color: orange;
+    color: orange; 
+   
 }
 #bare{
   display: flex;
@@ -1643,42 +1692,53 @@ nav{
 
 .content{
   width: 100%;
-    height: 600px;
+    height: 700px;
     padding-top: 150px;
     color: white;
     display: flex;
     flex-direction: column;
    justify-content: start;
-    align-items: start;
+    align-items: center;
     margin: 0px;
     padding-bottom: 300px;
-    gap: 10px;
-   
+    gap: 10px;  
+ } 
+  
 
-  
-}
-.content h1{
-    text-transform: capitalize;
-    font-size: 42px;
-    font-family: monospace;
-  
-   
-}
 .hh{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  padding-left: -100px;
+} 
+
+.hh h1{
+    text-transform: capitalize;
+    font-size: 58px;
+    font-family: monospace;
+    font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  
+   
 }
+
 .content p{
-    font-size: 20px;
+    font-size: 18px;
     text-transform: capitalize;
     margin-top: 20px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
 }
 .content button{
     width: 180px;
     height: 50px;
-    margin-left: 70px;
+    margin-left: 50px;
     background-color: orange;
     border: none;
     border-radius: 5px;
@@ -1695,8 +1755,8 @@ nav{
 }
 .content img {
     margin-top: 60px;
-    width:120%;
-    margin-left: 0;
+    width:420px;
+    margin-left: -120px;
     animation-name: spin;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -1732,14 +1792,15 @@ nav{
       grid-template-rows: repeat(4,1fr);
       margin-left: 0px;
       padding-top: 30px;
-      margin-top: 40px;
+      margin-top: 50px;
       margin-bottom: 550px;
       gap: 0px;
+      margin-left: 0px;
     
   }
   .g{
     
-      width: 350px;
+      width: 385px;
       height: 250px;
       display: flex;
       flex-direction: column;
@@ -1754,6 +1815,9 @@ nav{
   
   .g h1{
     font-size: 35px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
   }
   .g:hover{
       background-color: orange;
@@ -1775,7 +1839,7 @@ nav{
       flex-direction: column;
       justify-content: center;
       margin-bottom: 1500px;
-      margin-top: 250px;
+      margin-top: 380px;
      
      
   }
@@ -1784,7 +1848,7 @@ nav{
       padding-top: 60px;
       display: flex;
       width: 410px;
-      height:1200px;
+      height:1300px;
       flex-direction: column;
       align-items: center;
       background-color: white;
@@ -1796,7 +1860,7 @@ nav{
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 400px; 
+      height: 600px; 
      justify-content: center;
      padding-top: 80px;
      padding-left: 0px;
@@ -1808,21 +1872,28 @@ nav{
     font-size: 30px;
   }
   .gy h4{
-      font-size: 16px;
+      font-size: 26px;
       text-transform: capitalize;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Pacifico", cursive;
+       font-weight: 900;
+     font-style: normal;
       color: orange;
       
   }
   
   .gy p{
       font-size: 18px;
+      font-family: "Chakra Petch", sans-serif;
+      font-weight: 300;
+      font-style: normal; 
   }
   .gy h1{
      
       font-size: 30px;
       text-transform: capitalize;
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: "Chakra Petch", sans-serif;
+      font-weight: 300;
+      font-style: normal;
       padding-bottom: 20px;
   }
   .g0{
@@ -1853,7 +1924,7 @@ nav{
   }
   .gy button{
       width: 150px;
-      height: 40px;
+      height: 20px;
       background-color: orange;
       color: white;
       border: none;
@@ -1876,7 +1947,7 @@ nav{
   
   }
   .pic img{
-      width: 220px;
+      width: 200px;
   }
   .pi1 img{
     width: 180px;
@@ -1911,12 +1982,15 @@ nav{
   padding-top: 60px;
 }
 .menu h3{
-  color: orange;
-  font-family:sans-serif ;
+  color: orange;font-size: 30px;
+  font-family: "Pacifico", cursive;
+  font-weight: 800;
+  font-style: normal;
 }
 .menu h1{
   padding-top: 10px;
   text-transform: capitalize;
+  
 }
 
 .but{
@@ -1998,6 +2072,9 @@ nav{
   height: 90px;
   display: flex;
   margin: auto;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 .br img{
   width: 90px;
@@ -2011,16 +2088,20 @@ nav{
 .meal_name{
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 50px;
   padding: 12px;
 }
 .meal_name h1{
-  font-size: 20px;
+  font-size: 25px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
 }
 .meal_name span{
   color: orange;
   font-size: 20px;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -2028,8 +2109,8 @@ nav{
 
 .con4{
    
-  width:100%;
-  height: 680px;
+  width:90%;
+  height: 720px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -2059,7 +2140,7 @@ nav{
  
 }
 .form input{
-  width: 260px;
+  width:160px;
   height: 50px;
   padding-left: 20px;
 }
@@ -2069,17 +2150,22 @@ nav{
   padding-bottom: 10px;
 }
 .form legend{
-  font-size: 18px;
+  font-size: 25px;
   padding-top: 30px;
   color: orange;
   text-transform: capitalize;
   font-family: monospace;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
 }
 .form h1{
   text-transform: capitalize;
   padding-bottom: 20px;
   font-size: 35px;
-  font-family: monospace;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   color: white;
 }
 .textria input{
@@ -2120,14 +2206,21 @@ height: 80px;
 }
 .nam h3{
   margin: auto;
-  font-size: 25px;
+  font-size: 35px;
   color: orange;
-  font-family: monospace;
+  font-family: "Pacifico", cursive;
+  font-weight: 800;
+  font-style: normal;
   text-transform: capitalize;
 }
 .nam h1{
   font-size: 40px;
   text-transform: capitalize;
+   font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-weight: 900;
+  font-style: normal;
 }
 
 
@@ -2188,6 +2281,9 @@ height: 80px;
 .im2 h2{
   font-size: 30px;
   text-transform: capitalize;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .im2 p{
   padding-top: 10px;
@@ -2245,8 +2341,11 @@ height: 80px;
   color: orange;
   text-transform: capitalize;
   font-family: monospace;
-  font-size: 25px;
+  font-size: 35px;
   padding-bottom: 20px;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .com a{
@@ -2255,7 +2354,10 @@ height: 80px;
   padding-bottom: 15px;
   font-size: 18px;
   text-transform: capitalize;
-  transition: 0.5s;
+  transition: 0.5s; 
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 .com a:hover{
   letter-spacing: 1px;
@@ -2274,9 +2376,12 @@ height: 80px;
 .cont h1{
   color: orange;
   text-transform: capitalize;
-  font-family: monospace;
-  font-size: 25px;
   padding-left: 20px;
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
   
 }
 .conn{
@@ -2324,8 +2429,11 @@ height: 80px;
 .open h1{
   color: orange;
   text-transform: capitalize;
-  font-family: monospace;
-  font-size: 30px;
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
 }
 .open p{
    font-size: 20px;
@@ -2343,8 +2451,11 @@ height: 80px;
 .news h1{
   color: orange;
   text-transform: capitalize;
-  font-family: monospace;
-  font-size: 30px;
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  font-style: normal;
   padding-bottom: 20px;
 }
 .news p{
