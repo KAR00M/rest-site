@@ -50,13 +50,13 @@ scrole.onclick = function () {
 
 let bare=document.getElementById('bare');
 let bar=document.getElementById('bar');
-
+let ex=document.getElementById('ex');
 
 bare.onclick=function(){
 
 bar.style.display='flex';
 }
-bare.ondblclick=function(){
+ex.onclick=function(){
 
 bar.style.display='none';
 }
