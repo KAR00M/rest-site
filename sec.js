@@ -32,10 +32,17 @@ dinner.onclick = function () {
 
 let scrole = document.getElementById("up");
 window.onscroll = function () {
-  if (scrollY > 300) {
+ 
+
+ 
+  if (scrollY > 300) { 
+    if(screenx>600){
     scrole.style.display = "block";
+   }
   } else {
+    
     scrole.style.display = "none";
+    
   }
 };
 scrole.onclick = function () {
@@ -45,7 +52,7 @@ scrole.onclick = function () {
     behavior: "smooth",
   });
 };
-
+ 
 
 
 let bare=document.getElementById('bare');
