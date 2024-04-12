@@ -16,7 +16,9 @@ body {
   height: 100vh;
   background-color: rgba(247, 237, 237, 0.895);
 }
-
+.ex{
+  display: none;
+}
 nav {
  
   width: 100%;
@@ -1764,6 +1766,7 @@ nav{
   padding-left: 120px;
 }
 .up{
+
   display: none;
 }
 .content img {
