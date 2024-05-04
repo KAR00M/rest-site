@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="sec.css" />
+    <link rel="stylesheet" href="rest.css" />
     <link rel="stylesheet" href="icon/css/all.min.css" />
     <link rel="stylesheet" href="icon/css/fontawesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>Document</title>
+    
+    <title>resturant</title>
   </head>
   <body>
     <div class="container">
@@ -25,18 +26,20 @@
             <i id="bare" class="fa-solid fa-bars" style="color: #ffffff;"></i>
         </div>
 
-       
+       <td>
+        <tr></tr>
+       </td>
         <div id="bar" class="bar">
             <ul>    
               
               <button id="ex" class="ex"><i class="fa-solid fa-xmark"></i></button>
 
-                <li><a href>home</a></li>
-                <li><a href>menu</a></li>
-                <li><a href>about</a></li>
-                <li><a href>service</a></li>
-                <li><a href>page</a></li>
-                <li><a href>contact</a></li>
+                <li><a href="">home</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#service">service</a></li>
+                <li><a href="">page</a></li>
+                <li><a href="#contact">contact</a></li>
                 <li class="ll"><a href>book a TABLE</a></li>
             </ul>
         </div>
@@ -56,7 +59,7 @@
             quaerat ipsum laborum voluptatum sed dolore quidem.
           </p>
 
-          <button>book a table</button>
+          <button><a href="#book">book a table</a></button>
         </div>
         <div class="imh">
           <img src="img/p1.png" />
@@ -78,7 +81,7 @@
 
           <div class="g">
             <i class="fa-solid fa-utensils" style="color: #FFD43B;"></i>
-            <h1>Quality Food</h1>
+            <h1 id="service">Quality Food</h1>
             <p>
               Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
               diam
@@ -95,7 +98,7 @@
           </div>
           <div class="g">
             <i class="fa-solid fa-headset" style="color: #FFD43B;"></i>
-            <h1>24/7 Service</h1>
+            <h1 >24/7 Service</h1>
             <p>
               Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet
               diam
@@ -111,7 +114,7 @@
             <div class="pi4"><img src="img/a4.jpg" /></div>
           </div>
 
-          <div class="gy">
+          <div id="about" class="gy">
             <h4>about us</h4>
             <h1>welcome to <i class="fa-solid fa-utensils" style="color:orange;"></i> restorant</h1>
             <p>
@@ -124,7 +127,7 @@
             </p>
 
             <div class="g0">
-              <div class="g1">
+              <div  class="g1">
                 <span>15</span>
 
                 <p>
@@ -150,7 +153,7 @@
       <div class="con3">
         <div class="menu">
           <h3>___food menu___</h3>
-          <h1>most popular items</h1>
+          <h1 id="menu">most popular items</h1>
 
           <div class="but">
             <button id="break">
@@ -484,26 +487,32 @@
               <img src="img/video.jpg" >
             </div>
 
-            <div class="form">
-              <form>
-                <legend>reservation</legend>
-                <h1>book a table online</h1>
-                <div class="i1"> 
-                <input type="text" placeholder="your name" >
-                <input type="email" placeholder="your email" >
-              </div>
-               <div class="i1">
-                <input type="date" placeholder="date & time" >   
-                <input type="number" placeholder="No of people" >
-              </div>
+            <div class="form" id="book">
+              <!DOCTYPE html>
+<html>
+<head>
+    <title>Reservation Form</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <legend>Reservation</legend>
+        <h1>Book a Table Online</h1>
+        <div class="i1"> 
+            <input id="name" type="text" name="name" placeholder="Your Name">
+            <input id="email" type="email" name="email" placeholder="Your Email">
+        </div>
+        <div class="i1">
+            <input id="date" type="datetime-local" name="date_time" placeholder="Date & Time">   
+            <input id="number" type="number" name="num_people" placeholder="No of People">
+        </div>
+        <div class="textria">
+            <input id="special" type="text" name="special_request" placeholder="Special Request">
+        </div>
+        <button id="send">Book Now</button>
+    </form>
+</body>
+</html>
 
-              <div class="textria">
-                <input type="text" placeholder="special requist" >
-               </div>
-  
-
-              <button>book now</button>
-              </form>
             </div>
 
       </div>
@@ -519,12 +528,12 @@
             <div class="ime">
 
               <div class="im1">
-                <img src="img/team-1.jpg" >
+                <img src="img/imgr-1.jpeg" >
               </div>
               
               <div class="im2">
               <h2>kareem hesham</h2>
-              <p>designation</p>
+              <p>designer</p>
             </div>
            
             <div class="ic">
@@ -538,12 +547,12 @@
             <div class="ime">
 
               <div class="im1">
-                <img src="img/team-3.jpg" >
+                <img src="img/per-2.jpeg" >
               </div>
               
               <div class="im2">
-              <h2>abeer mohamed </h2>
-              <p>designation</p>
+              <h2>abeer shahin </h2>
+              <p>designer</p>
             </div>
            
             <div class="ic">
@@ -556,12 +565,12 @@
             <div class="ime">
 
               <div class="im1">
-                <img src="img/team-2.jpg" >
+                <img src="img/per-3.jpeg" >
               </div>
               
               <div class="im2">
-              <h2>nour ismail</h2>
-              <p>designation</p>
+              <h2>nourhan ismail</h2>
+              <p>designer</p>
             </div>
            
             <div class="ic">
@@ -574,12 +583,30 @@
             <div class="ime">
 
               <div class="im1">
-                <img src="img/team-4.jpg" >
+                <img src="img/imgr-4-1.jpeg" >
               </div>
               
               <div class="im2">
-              <h2>esraa ----</h2>
-              <p>designation</p>
+              <h2>esraa Adel</h2>
+              <p>designer</p>
+            </div>
+           
+            <div class="ic">
+              <div class="ico"><i class="fa-brands fa-facebook" style="color: #fcfcfc;"></i></div>
+              <div class="ico"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></div>
+              <div class="ico"><i class="fa-brands fa-x-twitter" style="color: white;"></i></div>
+            </div>
+          </div>
+     
+            <div class="ime">
+
+              <div class="im1">
+                <img src="img/img4-5-1.jpeg" >
+              </div>
+              
+              <div class="im2">
+              <h2>Omar ---- </h2>
+              <p>designer</p>
             </div>
            
             <div class="ic">
@@ -609,7 +636,7 @@
           </div>
 
           <div class="cont"> 
-            <h1>contact</h1>
+            <h1 id="contact">contact</h1>
             <div class="conn">
              
               <i><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></i>
@@ -678,6 +705,6 @@
     </div>
     
 
-    <script src="sec.js" ></script>
+    <script src="rest.js" ></script>
   </body>
 </html>
