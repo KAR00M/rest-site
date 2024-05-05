@@ -11,10 +11,87 @@ body {
   height: 100vh;
 }
 
+
+.loader{
+  width: 99%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 12px solid orange;
+  background-color: rgba(255, 166, 0, 0.371);
+  border-radius: 5px;
+}
+
+.loader-a {
+  --c1: #673b14;
+  --c2: #f8b13b;
+  width: 100px;
+  height: 160px;
+  border-top: 4px solid var(--c1);
+  border-bottom: 4px solid var(--c1);
+  background: linear-gradient(90deg, var(--c1) 2px, var(--c2) 0 5px,var(--c1) 0) 50%/7px 8px no-repeat;
+  display: grid;
+  overflow: hidden;
+  animation: l5-0 2s infinite linear;
+}
+
+.loader-a::before,
+.loader-a::after {
+  content: "";
+  grid-area: 1/1;
+  width: 75%;
+  height: calc(50% - 4px);
+  margin: 0 auto;
+  border: 2px solid var(--c1);
+  border-top: 0;
+  box-sizing: content-box;
+  border-radius: 0 0 40% 40%;
+  -webkit-mask: linear-gradient(#000 0 0) bottom/4px 2px no-repeat,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  background: linear-gradient(var(--d,0deg),var(--c2) 50%,#0000 0) bottom /100% 205%,
+    linear-gradient(var(--c2) 0 0) center/0 100%;
+  background-repeat: no-repeat;
+  animation: inherit;
+  animation-name: l5-1;
+}
+
+.loader-a::after {
+  transform-origin: 50% calc(100% + 2px);
+  transform: scaleY(-1);
+  --s: 3px;
+  --d: 180deg;
+}
+
+@keyframes l5-0 {
+  80% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(0.5turn)
+  }
+}
+
+@keyframes l5-1 {
+  10%,70% {
+    background-size: 100% 205%,var(--s,0) 100%
+  }
+
+  70%,100% {
+    background-position: top,center
+  }
+
+}
+
+
 .container {
   width: 100%;
   height: 100vh;
   background-color: rgba(247, 237, 237, 0.895);
+  display: none;
 }
 .ex{
   display: none;
@@ -89,17 +166,74 @@ nav i{
   width:51px ;
   height: 51px;
 }
-.ll {
+/* .ll {
   background-color: orange;
   padding: 10px;
   border-radius: 5px;
+} */
+
+/* ====================================================================================== */
+
+
+
+
+
+
+/* ----------------------------------------------------------- */
+.hove{
+  width: 10em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge orange;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
+
+.hove::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #000000;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.hove::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #000000;
+  transition: 0.5s;
+}
+
+.hove:hover::before, button:hover::after {
+  transform: scale(0)
+}
+
+.hove:hover {
+  box-shadow: inset 0px 0px 25px orange;
+}
+/* ----------------------------------------------------------------------- */
+
 .content {
   width: 100%;
   height: 800px;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(rgba(51, 53, 65, 0.919) , rgba(91, 89, 121, 0.777)),url(img/bg-hero.jpg);
+  background-image: linear-gradient(rgba(63, 68, 97, 0.919) , rgba(66, 64, 97, 0.777)),url(img/bg-hero.jpg);
 }
 .text {
   padding-left: 80px;
@@ -112,14 +246,54 @@ nav i{
   font-family: "Kalam", cursive;
   font-weight: 300;
   font-style: normal;
+  transform: rotate(2deg);
 }
 .text p {
   font-size: 20px;
   font-family: "Kalam", cursive;
   font-weight: 300;
   font-style: normal;
+  transform: rotate(3deg);
 }
-.text button {
+
+.ton {
+  margin-top: 60px;
+  width: 180px;
+  padding: 0;
+  border: none;
+  transform: rotate(5deg);
+  transform-origin: center;
+  font-family: "Gochi Hand", cursive;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 #494a4b;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: orange;
+}
+
+.ton span {
+  background: #f1f5f8;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid #494a4b;
+}
+
+.ton:active {
+  transform: translateY(5px);
+  padding-bottom: 0px;
+  outline: 0;
+}
+.ton a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* .text button {
   margin-top: 50px;
   width: 150px;
   height: 50px;
@@ -132,7 +306,7 @@ nav i{
 .text button a{
   text-decoration: none;
   color: white;
-}
+} */
 .imh {
   padding-left: 250px;
 }
@@ -194,7 +368,8 @@ nav i{
     font-family: "Chakra Petch", sans-serif;
     font-weight: 200;
     font-style: normal;
-}
+    box-shadow: -11px 8px 35px 1px #000000a4;
+  }
 .g:hover{
     background-color: orange;
     color: white;
@@ -294,12 +469,27 @@ nav i{
 }
 .pic img{
     width: 250px;
+    filter: saturate(25%);
+    transition: 0.5s;
+}
+.pic img:hover{
+  filter: saturate(100%);
 }
 .pi2{
     margin-top:30px;
+    transform: rotate(-10deg);
+    margin-right: 30px;
+    z-index: 2;
 }
-.pi4 {
+.pi4{
+  animation: myAnim 2s ease-in-out 5s 5 normal forwards;
+}
+.pi1{
+  animation: myAnim 2s ease-in-out 5s 5 normal forwards;
+}
+.pi3 {
     margin-top:30px ;
+    transform: rotate(10deg);
 }
 
 
@@ -307,10 +497,15 @@ nav i{
 .con3{
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 1000px;
+  width: 90%;
+  height: 900px;
   justify-content: center;
   align-items: center;
+  box-shadow: -15px 9px 81px 1px #000000;
+  margin: 20px;
+  margin-left: 80px;
+  border-radius: 20px;
+  
  
 }
 .menu{
@@ -319,6 +514,7 @@ nav i{
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
+  
 }
 .menu h3{
   color: orange;
@@ -496,13 +692,14 @@ nav i{
   color: white;
 }
 .form button{
-  width: 600px;
+  width: 400px;
   height: 40px;
   text-transform: uppercase;
-  background-color: orange;
+  border: 5px solid orange;
   color: white;
-  border: none;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-left: 60px;
+  transition: 0.5s;
 }
 
 
@@ -532,10 +729,12 @@ nav i{
   font-weight: 500px;
   font-style: normal;
   text-transform: capitalize;
+  text-shadow: -3px 3px 9px #ffae00;
 }
 .nam h1{
   font-size: 40px;
   text-transform: capitalize;
+  text-shadow: -3px 3px 9px #000000;
 }
 
 .im{
@@ -565,6 +764,7 @@ nav i{
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  box-shadow: -15px 9px 81px 1px #000000;
  
 
 }
@@ -578,7 +778,7 @@ nav i{
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  
+  filter: drop-shadow(-19px 21px 15px #000000);  
 
 }
 .im1 img{
@@ -593,9 +793,11 @@ nav i{
   padding-bottom: 60px;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .im2 h2{
   padding-top: 10px;
+  
   padding-left: 15px;
   font-size: 30px;
   text-transform: capitalize;
@@ -726,10 +928,96 @@ nav i{
    font-size: 20px;
 }
 .da{
- 
+   
   padding-top: 30px;
 }
+/* -------------------------------------------- */
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.3rem;
+  --stroke: #666;
+  --fill: #ffc73a;
+}
 
+.rating input {
+  appearance: unset;
+}
+
+.rating label {
+  cursor: pointer;
+}
+
+.rating svg {
+  width: 2rem;
+  height: 2rem;
+  overflow: visible;
+  fill: transparent;
+  stroke: var(--stroke);
+  stroke-linejoin: bevel;
+  stroke-dasharray: 12;
+  animation: idle 4s linear infinite;
+  transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+  from {
+    stroke-dashoffset: 24;
+  }
+}
+
+.rating label:hover svg {
+  stroke: var(--fill);
+}
+
+.rating input:checked ~ label svg {
+  transition: 0s;
+  animation: idle 4s linear infinite, yippee 0.75s backwards;
+  fill: var(--fill);
+  stroke: var(--fill);
+  stroke-opacity: 0;
+  stroke-dasharray: 0;
+  stroke-linejoin: miter;
+  stroke-width: 8px;
+}
+
+@keyframes yippee {
+  0% {
+    transform: scale(1);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30% {
+    transform: scale(0);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30.1% {
+    stroke: var(--fill);
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+
+  60% {
+    transform: scale(1.2);
+    fill: var(--fill);
+  }
+}
+
+/* ========================================================================= */
 .news{
   display: flex;
   flex-direction: column;
@@ -938,13 +1226,12 @@ nav i{
 }
 .content button{
     width: 180px;
-    height: 50px;
+    height: 45px;
     margin-left: 50px;
-    background-color: orange;
     border: none;
     border-radius: 5px;
     color: white;
-    margin-top: 50px;
+    margin-top: 60px;
     font-size: 16px;
     text-transform: capitalize;
 }
@@ -1168,13 +1455,14 @@ nav i{
 .con3{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 99%;
   height: 1500px;
   justify-content: center;
   align-items: center;
   background-color: white;
   margin-top: -880px;
   border: none;
+  margin: 0;
  
 }
 .menu{
@@ -1372,17 +1660,18 @@ nav i{
   color: white;
 }
 .textria input{
-width: 365px;
+width: 355px;
 height: 80px; 
 }
 .form button{
-  width: 390px;
+  width: 380px;
   height: 40px;
   text-transform: uppercase;
   background-color: orange;
   color: white;
   border: none;
   margin-top: 10px;
+  margin-left: 0;
 }
 
 
@@ -1691,3 +1980,40 @@ height: 80px;
 }
   
 }
+
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+
+
+
+  
