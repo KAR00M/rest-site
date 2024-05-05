@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="sec.css" />
+    <link rel="stylesheet" href="rest.css" />
     <link rel="stylesheet" href="icon/css/all.min.css" />
     <link rel="stylesheet" href="icon/css/fontawesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,10 @@
     <title>resturant</title>
   </head>
   <body>
-    <div class="container">
+    <div class="loader" id="prel">
+    <div class="loader-a" ></div>
+    </div>
+    <div class="container" id="cont">
      
       <nav>
         <div class="nov">
@@ -40,13 +43,13 @@
                 <li><a href="#service">service</a></li>
                 <li><a href="">page</a></li>
                 <li><a href="#contact">contact</a></li>
-                <li class="ll"><a href>book a TABLE</a></li>
+                <li class="ll"><button class="hove"> book A table</button></li>
             </ul>
         </div>
    
 </nav>
 
-
+ 
       <div class="content">
         <div class="text">
           <div class="hh">
@@ -59,7 +62,10 @@
             quaerat ipsum laborum voluptatum sed dolore quidem.
           </p>
 
-          <button><a href="#book">book a table</a></button>
+          <button class="ton">
+            <span><a href="#book">book a table</a></span>
+          </button>
+          
         </div>
         <div class="imh">
           <img src="img/p1.png" />
@@ -508,7 +514,7 @@
         <div class="textria">
             <input id="special" type="text" name="special_request" placeholder="Special Request">
         </div>
-        <button id="send">Book Now</button>
+        <button class="hove" id="send">Book Now</button>
     </form>
 </body>
 </html>
@@ -605,7 +611,7 @@
               </div>
               
               <div class="im2">
-              <h2>Omar ---- </h2>
+              <h2>Omar mohamed </h2>
               <p>designer</p>
             </div>
            
@@ -679,6 +685,32 @@
             <p>sunday</p>
             <span>10AM - 08PM</span>
           </div>
+          <div class="da">
+           
+            <div class="rating"> 
+              <label>rating</label>
+              <input type="radio" id="star-1" name="star-radio" value="star-1">
+              <label for="star-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              </label>
+              <input type="radio" id="star-2" name="star-radio" value="star-1">
+              <label for="star-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              </label>
+              <input type="radio" id="star-3" name="star-radio" value="star-1">
+              <label for="star-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              </label>
+              <input type="radio" id="star-4" name="star-radio" value="star-1">
+              <label for="star-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              </label>
+              <input type="radio" id="star-5" name="star-radio" value="star-1">
+              <label for="star-5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              </label>
+            </div>
+          </div>
 
           </div>
 
@@ -705,6 +737,6 @@
     </div>
     
 
-    <script src="sec.js" ></script>
+    <script src="rest.js" ></script>
   </body>
 </html>
